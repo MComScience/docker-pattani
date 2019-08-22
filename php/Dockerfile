@@ -3,7 +3,7 @@ FROM php:7.2-fpm
 MAINTAINER MComScience <m-com3@hotmail.com>
 
 # install ODBC driver
-RUN apt-get update && apt-get install -y apt-transport-https gnupg wget
+RUN apt-get update && apt-get install -y apt-transport-https wget
 
 # Install mssql drivers
 RUN apt-get install -y unixodbc-dev
