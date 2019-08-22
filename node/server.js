@@ -97,6 +97,14 @@ io.on('connection', function (socket) {
     socket.broadcast.emit(EVENTS.ON_END_HOLD, res)
   });
 
+  socket.on(EVENTS.AUDIO_PLAYING, function(res) {
+    socket.broadcast.emit(EVENTS.AUDIO_PLAYING, res)
+  });
+
+  socket.on(EVENTS.AUDIO_ENDED, function(res) {
+    socket.broadcast.emit(EVENTS.AUDIO_ENDED, res)
+  });
+
   socket.on('disconnect', function () {
     io.emit('disconnected')
   });
