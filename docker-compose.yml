@@ -70,7 +70,7 @@ services:
     links:
       - php
     ports:
-      - "80:80"
+      - "8082:80"
     networks:
       - backend
       - frontend
