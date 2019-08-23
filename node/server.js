@@ -26,7 +26,7 @@ const EVENTS = {
   UPDATED_QUEUE: 'UPDATED_QUEUE'
 };
 
-app.get('/', function (req, res) {
+app.get('/api-v1', function (req, res) {
   res.json({
     success: true,
     status: 200,
